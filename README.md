@@ -37,14 +37,17 @@ Como o projeto foi construído puramente com bibliotecas base, a execução no t
 
 ```bash
 # Clone o repositório
-git clone [https://github.com/c4rlosfb/pre-processing-and-predictive-analysis.git](https://github.com/c4rlosfb/pre-processing-and-predictive-analysis.git)
+git clone https://github.com/c4rlosfb/pre-processing-and-predictive-analysis.git
 
 # Acesse o diretório do projeto
 cd pre-processing-and-predictive-analysis
 
-# (Opcional) Crie e ative um ambiente virtual
+# Crie e ative um ambiente virtual (recomendado)
 python -m venv venv
-source venv/bin/activate
+source venv/bin/activate  # No Windows (Git Bash): source venv/Scripts/activate
+
+# Instale as dependências necessárias
+pip install -r requirements.txt
 
 # Execute a rotina de treinamento e avaliação
 python treinar_modelos.py
