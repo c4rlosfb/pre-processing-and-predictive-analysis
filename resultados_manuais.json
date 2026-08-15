@@ -1,0 +1,142 @@
+{
+  "knn_sem_pca": {
+    "nome": "K-NN (sem PCA)",
+    "best_params": {
+      "n_neighbors": 3,
+      "weights": "distance"
+    },
+    "cv_f1_mean": 0.9799000059662312,
+    "test_accuracy": 0.9640287769784173,
+    "test_precision": 0.9387755102040817,
+    "test_recall": 0.9583333333333334,
+    "test_f1": 0.9484536082474228,
+    "confusion_matrix": [
+      [
+        88,
+        3
+      ],
+      [
+        2,
+        46
+      ]
+    ]
+  },
+  "knn_com_pca": {
+    "nome": "K-NN (com PCA)",
+    "best_params": {
+      "n_neighbors": 3,
+      "weights": "uniform"
+    },
+    "cv_f1_mean": 0.9798454608033447,
+    "test_accuracy": 0.9784172661870504,
+    "test_precision": 0.9411764705882353,
+    "test_recall": 1.0,
+    "test_f1": 0.9696969696969697,
+    "confusion_matrix": [
+      [
+        88,
+        3
+      ],
+      [
+        0,
+        48
+      ]
+    ]
+  },
+  "dt_sem_pca": {
+    "nome": "Árvore C4.5 (sem PCA)",
+    "best_params": {
+      "max_depth": 7,
+      "min_samples_split": 2,
+      "criterion": "entropy"
+    },
+    "cv_f1_mean": 0.9665065929630815,
+    "test_accuracy": 0.9424460431654677,
+    "test_precision": 0.9,
+    "test_recall": 0.9375,
+    "test_f1": 0.9183673469387755,
+    "confusion_matrix": [
+      [
+        86,
+        5
+      ],
+      [
+        3,
+        45
+      ]
+    ]
+  },
+  "dt_com_pca": {
+    "nome": "Árvore C4.5 (com PCA)",
+    "best_params": {
+      "max_depth": 3,
+      "min_samples_split": 5,
+      "criterion": "entropy"
+    },
+    "cv_f1_mean": 0.9758731603286472,
+    "test_accuracy": 0.9856115107913669,
+    "test_precision": 0.96,
+    "test_recall": 1.0,
+    "test_f1": 0.9795918367346939,
+    "confusion_matrix": [
+      [
+        89,
+        2
+      ],
+      [
+        0,
+        48
+      ]
+    ]
+  },
+  "mlp_sem_pca": {
+    "nome": "MLP (sem PCA)",
+    "best_params": {
+      "hidden_layer_sizes": "(50,)",
+      "activation": "relu",
+      "alpha": 0.0001,
+      "max_iter": 500
+    },
+    "cv_f1_mean": null,
+    "cv_f1_note": "Melhor param via experimentação prévia; grid search de MLP inviável (~60 treinos × centenas de épocas)",
+    "test_accuracy": 0.9856115107913669,
+    "test_precision": 0.9791666666666666,
+    "test_recall": 0.9791666666666666,
+    "test_f1": 0.9791666666666666,
+    "confusion_matrix": [
+      [
+        90,
+        1
+      ],
+      [
+        1,
+        47
+      ]
+    ]
+  },
+  "mlp_com_pca": {
+    "nome": "MLP (com PCA)",
+    "best_params": {
+      "hidden_layer_sizes": "(100,)",
+      "activation": "relu",
+      "alpha": 0.0001,
+      "max_iter": 500
+    },
+    "cv_f1_mean": null,
+    "cv_f1_note": "Melhor param via experimentação prévia; grid search de MLP inviável",
+    "test_accuracy": 0.9784172661870504,
+    "test_precision": 0.9591836734693877,
+    "test_recall": 0.9791666666666666,
+    "test_f1": 0.9690721649484536,
+    "confusion_matrix": [
+      [
+        89,
+        2
+      ],
+      [
+        1,
+        47
+      ]
+    ]
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "dataset": "Breast Cancer Wisconsin (UCI ID 15)",
+  "total": 699,
+  "features": 9,
+  "feature_names": [
+    "Clump_thickness",
+    "Uniformity_of_cell_size",
+    "Uniformity_of_cell_shape",
+    "Marginal_adhesion",
+    "Single_epithelial_cell_size",
+    "Bare_nuclei",
+    "Bland_chromatin",
+    "Normal_nucleoli",
+    "Mitoses"
+  ],
+  "target": "Class (0=benigno, 1=maligno)",
+  "train_balanced": 734,
+  "test": 139,
+  "imputation": "Bare_nuclei: mediana (16 valores)",
+  "balancing": "SMOTE no treino",
+  "scaling": "StandardScaler (z-score)",
+  "pca_components": 7,
+  "pca_variance": 0.9641751047932086,
+  "train_dist": {
+    "1": 367,
+    "0": 367
+  },
+  "test_dist": {
+    "0": 91,
+    "1": 48
+  }
+}
